@@ -1,4 +1,6 @@
 def main():
+    #display welcome banner
+    banner()
     #request sentence input
     sentence = input('Gimme a sentence to camelCase: ')
     # send to get lowered
@@ -13,6 +15,12 @@ def main():
     # send to get joined
     smush_together = smush(capital_list)
     print(first_word+smush_together)
+
+def banner():
+    """ Display program name """
+    message = 'Awesome camelcase program!'
+    stars = '*' * len(message)
+    print(f'\n{stars} \n{message} \n{stars}')
 
 def lower(sentence):
     lowering_sentence = sentence.lower()
