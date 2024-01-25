@@ -19,12 +19,13 @@ def main():
     print(first_word+smush_together)
 
 def banner():
-    """ Display program name """
+    """ Display program name, using stars """
     message = 'Awesome camelcase program!'
     stars = '*' * len(message)
     print(f'\n{stars} \n{message} \n{stars}')
 
 def instructions():
+    """ Display instructions for how to use the program"""
     print('Enter a sentence and this program will convert to camelCase')
 
 def lower(sentence):
