@@ -1,6 +1,8 @@
 def main():
     #display welcome banner
     banner()
+    #display instructions
+    instructions()
     #request sentence input
     sentence = input('Gimme a sentence to camelCase: ')
     # send to get lowered
@@ -21,6 +23,9 @@ def banner():
     message = 'Awesome camelcase program!'
     stars = '*' * len(message)
     print(f'\n{stars} \n{message} \n{stars}')
+
+def instructions():
+    print('Enter a sentence and this program will convert to camelCase')
 
 def lower(sentence):
     lowering_sentence = sentence.lower()
